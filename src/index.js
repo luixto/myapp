@@ -1,5 +1,6 @@
 const express = require('express');
 const morgan = require('morgan');
+const exphbs = require('express-handlebars');
 
 //Initializations
 const app = express();
@@ -13,6 +14,7 @@ app.use(morgan('dev'));
 //Global Variables
 
 //Routes
+app.use(requiere('./routes'));
 
 //Public
 
